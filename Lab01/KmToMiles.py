@@ -5,7 +5,7 @@
 #Lab 1 Excercise 2, convert km to miles
 
 # Variables
-miles = float(.62)
+miles = float(0.62)
 
 # Input
 kilometers_to_convert = float(input("Enter how many Kilometers you need converted:"))
@@ -14,4 +14,4 @@ kilometers_to_convert = float(input("Enter how many Kilometers you need converte
 km = (kilometers_to_convert * miles)
 
 # Output
-print(float(kilometers_to_convert), "converted to miles is " , km)
+print(float(kilometers_to_convert), "kilometers converted to miles is" , km)
