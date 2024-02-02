@@ -4,8 +4,6 @@
 #Palomar College CSIT 175
 #Lab 1 Excercise 1, multiple 2 numbers
 
-#Variables
-
 # declare variables
 number1 = 0
 number2 = 0
