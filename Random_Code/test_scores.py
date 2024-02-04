@@ -16,4 +16,7 @@ while counter < number_scores:
 average_score = round(score_total / counter) if counter > 0 else 0
 
 print("===============")
-print("Tests taken: " + str(number_scores) + "\nAverage Score: " + str(average_score))
+#print("Tests taken: " + str(number_scores) + "\nAverage Score: " + str(average_score)) # Testing out f" down below
+
+print(f"Tests taken: {number_scores}\n"
+      f"Average Score: {average_score}")
