@@ -1,6 +1,6 @@
 #!/user/bin/env python3
 
-#Jordan Banks & Kaiden Banks
+#Jordan Banks
 #Palomar College CSIT 175
 #Lab 2 Excercise 3, Determining total cost by month of stay and nights per stay
 
