@@ -27,4 +27,4 @@ total_cost = nightly_cost * user_nights
 
 
 # Output for the total cost
-print ("Your total cost for", user_nights, "nights is ", total_cost)
+print ("Your total cost for", user_nights, "nights is $" + str(total_cost))
