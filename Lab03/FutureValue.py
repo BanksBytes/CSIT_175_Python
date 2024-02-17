@@ -27,23 +27,27 @@ years = int(input("Enter the amount of years for the investment : "))
 monthly_int_rate = annual_int_rate / 100 / 12
 months = years * 12
 
-fv = monthly_amt
-
 while month_num <= months:
+    interest = monthly_amt * monthly_int_rate
+    fv += monthly_amt  # Add monthly_amt to future value
+    fv += interest  # Add interest to future value
     interest = fv * monthly_int_rate
-    fv += monthly_amt + interest
-    print(msg.format(month_num, fv, interest))
-    month_num += 1
     tot_interest += interest
+
+    print(msg.format(month_num, fv, interest))
+    
+    month_num += 1  # Be sure to change the loop Variable!
+
+
     
 
  #   interest = monthly_amt * monthly_int_rate
  #   tot_fv = monthly_amt + interest
  #   fv += tot_fv
 
-    print(msg.format (month_num, fv, interest))
-    month_num += 1 # Be sure to change the loop Variable!
-    tot_interest += interest
+ #   print(msg.format (month_num, fv, interest))
+ #   month_num += 1 # Be sure to change the loop Variable!
+ #   tot_interest += interest
 
 
 
