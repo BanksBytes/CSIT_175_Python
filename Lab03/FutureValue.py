@@ -14,7 +14,7 @@ months = 0
 month_num = 1
 
 # message with python format specifiers
-msg = "Month: {0:3d} FV: ${1:.2f} Interest: ${2:2f}"
+msg = "Month: {0:3d} FV: ${1:.2f} Interest: ${2:.2f}"
 interest = 0.0
 tot_interest = 0.0
 
@@ -28,26 +28,14 @@ monthly_int_rate = annual_int_rate / 100 / 12
 months = years * 12
 
 while month_num <= months:
-    interest = monthly_amt * monthly_int_rate
-    fv += monthly_amt  # Add monthly_amt to future value
+    fv += monthly_amt  # Add monthly_amt to future value    
+    interest = fv * monthly_int_rate # With the new FV * the interest rate we get our interest for that month
     fv += interest  # Add interest to future value
-    interest = fv * monthly_int_rate
-    tot_interest += interest
+    tot_interest += interest # Get our total interest
 
-    print(msg.format(month_num, fv, interest))
-    
-    month_num += 1  # Be sure to change the loop Variable!
+    print(msg.format(month_num, fv, round(interest, 2)))
+    month_num += 1  
 
-
-    
-
- #   interest = monthly_amt * monthly_int_rate
- #   tot_fv = monthly_amt + interest
- #   fv += tot_fv
-
- #   print(msg.format (month_num, fv, interest))
- #   month_num += 1 # Be sure to change the loop Variable!
- #   tot_interest += interest
 
 
 
