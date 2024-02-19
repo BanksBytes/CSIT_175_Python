@@ -17,11 +17,11 @@ i = 0
 flip = 0
 
 for i in range(1, MAX_FLIPS + 1, 1):
-    flip = random.randint(0,1)
-    if flip == 1 :
+    flip = random.randint(0,1) # setting variable for flip to get a random number between 0 and 1
+    if flip == 1 :   # if 1 is chosen then it will be considered heads
         heads += 1 
         print("Heads")
-    if flip == 0 :
+    if flip == 0 : # if 0 is chosen then it will be considered tails
         tails += 1
         print("Tails")
 
