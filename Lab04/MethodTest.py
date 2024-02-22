@@ -55,16 +55,17 @@ def main():
     # note the list is in square brackets. Strings are in quotes and
     # separated by commas
     
-    my_list = ["56", "6", "54", "789", "3", "99"]
-    value = input("Enter an Integer to find: ")
+    my_list = [56, 6, 54, 789, 3, 99]
+    value = int(input("Enter an Integer to find: "))
     i = m.find_int(my_list, value)
     # did we find what we are looking for
     if i >= 0:
-        print("Found " + value + " at index: " + str(i) )
+        print("Found " + str(value) + " at index: " + str(i) )
     else:
-        print( value + " NOT FOUND!")
+        print( str(value) + " NOT FOUND!")
 
-# if this is the main module, then execute main()
+
+
 
 if __name__ == "__main__":
     main()
