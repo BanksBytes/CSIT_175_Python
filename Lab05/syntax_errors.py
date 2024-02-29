@@ -35,13 +35,13 @@ def main():
     for i in range(5):
         print(i)
 
-    input = "what's your favorite season of the year?"
+    input_season = input("what's your favorite season of the year?: ")
 # Incorrect Indentation here
 #            season = input
-    season = input
+    season = input_season
 # Incorrect Indentation here
 #            print(season)
-    print(season)
+    print(input_season)
 
 # if statement should be terminated with a colon ":", also should be using a comparison operator "==" instead of the assignment operator "="        
 #if __name__="__main__"
