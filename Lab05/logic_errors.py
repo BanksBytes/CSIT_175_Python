@@ -8,25 +8,33 @@
 MI_PER_KM = 0.62 # Do not change
 LBS_PER_KG = 2.205 # Do not change
 
+
 # convert miles to kilometers
 def mi_to_km(miles):
     km = miles / MI_PER_KM
-    return miles
+    return km
 
 # convert kilometers to miles
+
+
 def km_to_mi(km):
-    miles = km / MI_PER_KM
+    miles = km * MI_PER_KM
     return miles
 
 # convert kilograms to pounds
+
+
 def kg_to_lbs(kg):
     lbs = kg * LBS_PER_KG
-    return LBS_PER_KG
+    return lbs
 
 # convert punds to kilograms
+
+
 def lbs_to_kg(lbs):
-    kg = lbs * LBS_PER_KG
-    return lbs
+    kg = lbs / LBS_PER_KG
+    return kg
+
 
 # ===== DO NOT CHANGE ANYTHING BELOW THIS LINE ===== #
 if __name__ == "__main__":
