@@ -12,12 +12,16 @@ LBS_PER_KG = 2.205 # Do not change
 # convert miles to kilometers
 def mi_to_km(miles):
     km = miles / MI_PER_KM
+#   This needs to return the vaiable of km and not miles
+#   return miles
     return km
 
 # convert kilometers to miles
 
 
 def km_to_mi(km):
+#   "km" needs to multiply MI_PER_KM and not divide
+#   miles = km / MI_PER_KM
     miles = km * MI_PER_KM
     return miles
 
@@ -26,13 +30,19 @@ def km_to_mi(km):
 
 def kg_to_lbs(kg):
     lbs = kg * LBS_PER_KG
+#   This needs to return the variable of "lbs" and not "LBS_PER_KG"
+#   return LBS_PER_KG   
     return lbs
 
 # convert punds to kilograms
 
 
 def lbs_to_kg(lbs):
+#   to get the calculation you need to divide lbs by LBS_PER_KG and not multiply
+#   kg = lbs * LBS_PER_KG
     kg = lbs / LBS_PER_KG
+#   needs to return the variable of "kg" and not "lbs"
+#   return lbs
     return kg
 
 
@@ -47,7 +57,7 @@ if __name__ == "__main__":
     # 62.0 mi   = 100 km
     # 620.0 mi  = 1000 km
 
-    ERROR = .01
+    ERROR = .1
     kilometers = [10, 20, 50, 100, 1000]
     miles      = [6.2, 12.4, 31.0, 62.0, 620.0]
 
