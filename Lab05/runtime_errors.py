@@ -29,8 +29,9 @@ def main():
 #    print(f"{w} ---> {x} ---> {y}")
     print(f"{x} ---> {y}")
 
+#    Tried to set an integer to a string value
 #    int_value = int("abc")
-#    int_value = int(a, b, c)
+    int_value = str("abc")
 
 
 #    print( square(random.getrandom(10) ))
@@ -44,10 +45,11 @@ def main():
 #   x = square( 2, 3 ) 
     x = square(3)
     print( x )
+# None can not be used as a variable
+   #None = 10
+    None_Var = 10
 
-    None_test = 10
-
-    print("The value of x is: %s" % "abc")
+    print("The value of x is: %s" % int_value)
 
 if __name__=="__main__":
     main()
