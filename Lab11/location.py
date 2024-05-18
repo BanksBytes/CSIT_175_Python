@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # Jordan Banks
-#Palomar College CSIT 175
+# Palomar College CSIT 175
 # Lab 11 ex.2 
 # Reading Data from an API, 
 # Location: get city and state from zip code

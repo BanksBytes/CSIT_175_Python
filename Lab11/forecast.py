@@ -25,3 +25,6 @@ def get_location(zip_code):
         return city, state, lat, lon
     else:
         return None, None, None, None
+
+if __name__ == "__main__":
+    app.run(debug=True)
