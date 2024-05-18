@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ city }}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body style="background-color: skyblue">
+    <div class="container">
+        <h1 class="mt-4">Weather Forecast</h1>
+        <div class="card my-3">
+            <div class="card-header bg-info">
+                {{ city }}, {{ state }}
+            </div> <!-- #card-header -->
+            <div class="card-body" style="text-align: center; margin: auto;">
+                <h5 class="card-title">{{ time_of_day }}</h5>
+                <img src="{{ icon }}" class="img-fluid" alt="Weather Icon">
+                <p class="card-text">{{ forecast }}</p>
+            </div> <!-- #card-body -->
+            <div class="card-footer">
+                <small class="text-muted">updated: {{ time_string }}</small>
+            </div> <!-- #card-footer -->
+        </div> <!-- #card -->
+    </div> <!-- #container -->
+</body>
+</html>
